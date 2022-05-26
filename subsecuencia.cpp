@@ -3,12 +3,13 @@
 
 using namespace std;
 
-int cantidadApariciones (string s1, int x){
+int cantidadApariciones (string s1, char x){
+    int suma = 0;
     for(int i = 0; i < s1.size(); i++){
         if(s1[1] == x){
-            x = x+i;
+            suma += i;
         }
-    } return x;
+    } return suma;
 }
 
 
